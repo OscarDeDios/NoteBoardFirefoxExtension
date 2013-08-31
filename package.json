@@ -1,0 +1,9 @@
+{
+  "name": "boardnotes",
+  "fullName": "Board Notes",
+  "id": "admin@noteboardapp.com",
+  "description": "Board Notes",
+  "author": "Oscar de Dios",
+  "license": "MPL 2.0",
+  "version": "2.0.8"
+}
