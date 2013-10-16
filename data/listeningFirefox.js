@@ -29,28 +29,54 @@ self.port.on('clip', function(args) {
     }
   }
 })
-if (navigator.language != 'es' && navigator.language != 'es-ES')
-    $('#botonPost').before('<div id="logout" class="button" >Logout</div>');
-else
-  $('#botonPost').before('<div id="logout" class="button" >Desconectar</div>');
 
-$('#logout').on('click',function(){
+$('#logoutFire').show();
+$('#logoutFire').on('click',function(){
     self.port.emit('logout','logout');
     window.open('salir.php', '_self')
 });
 
 var interval = setInterval (function(){
     listaTablones = [];
-    $('.tabLabel').each(function(){listaTablones.push($(this).text())});
+    $('.tabLabel').each(function(){
+      if ($(this).attr('id') != 'tab5LabelAdd')
+        listaTablones.push($(this).text())
+    });
     auxStr = listaTablones.toString();
+    listaTablones2 = [];
+    $('.tabPaneles2').each(function(){listaTablones2.push($(this).text())});
+    auxStr2 = listaTablones2.toString();
     if (listaStr != auxStr)
     {
        self.port.emit('cambioTablones',auxStr);
     }
+    if (listaStr2 != auxStr2 && auxStr2 != '')
+    {
+       self.port.emit('cambioTablones',auxStr2);
+    }
     listaStr = auxStr;
+    listaStr2 = auxStr2;
 }, 5000);
 var listaTablones = new Array();
 var listaStr = '';
+var listaTablones2 = new Array();
+var listaStr2 = '';
+
+
+
+
+// var interval = setInterval (function(){
+//     listaTablones = [];
+//     $('.tabLabel').each(function(){listaTablones.push($(this).text())});
+//     auxStr = listaTablones.toString();
+//     if (listaStr != auxStr)
+//     {
+//        self.port.emit('cambioTablones',auxStr);
+//     }
+//     listaStr = auxStr;
+// }, 5000);
+// var listaTablones = new Array();
+// var listaStr = '';
 
 
 

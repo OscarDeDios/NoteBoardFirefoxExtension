@@ -133,8 +133,6 @@ function registraUsuario(){
 
 
 
-
-
 function enviaPassword(){
     if (document.getElementById('nick').value == '') {
         $('#capaContenedora').text("Informa el nick o mail");

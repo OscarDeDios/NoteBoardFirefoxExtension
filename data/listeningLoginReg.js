@@ -12,7 +12,7 @@ self.port.on('datosLogin', function(message) {
             timeout: 20000,
             cache: false,
             success: function(answer){
-                    if ($.trim(answer) != 'OK')  document.getElementById('capaContenedora').innerHTML = 'ERROR! ' + answer;
+                    if ($.trim(answer) != 'OK')  $('#capaContenedora').text('ERROR! ' + answer);
                     else document.location.href="paypalPage3.php";
                 },
             error: function(objeto, quepaso, otroobj){

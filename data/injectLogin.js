@@ -25,4 +25,7 @@ self.port.emit('idioma', navigator.language);
 document.getElementById('demoImg').addEventListener('click',function(){
     self.port.emit('goDemo','goDemo');
 });
-
+document.getElementById('fb-login').addEventListener('click',function(){
+    document.getElementById('black_overlay').style.display = 'block';
+    self.port.emit('loginFacebook');
+});

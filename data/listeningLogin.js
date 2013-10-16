@@ -12,7 +12,7 @@ self.port.on('datosLogin', function(message) {
             timeout: 20000,
             cache: false,
             success: function(answer){
-                    if ($.trim(answer) != 'OK')  document.getElementById('capaContenedora').innerHTML = 'ERROR! ' + answer;
+                    if ($.trim(answer) != 'OK') $('#capaContenedora').text('ERROR! ' + answer);
                     else document.location.href="board.php";
                 },
             error: function(objeto, quepaso, otroobj){
@@ -28,7 +28,7 @@ self.port.on('loginFb', function(message) {
         var interval = setInterval (function(){
             if (document.getElementById('fb-login'))
             {
-                clearInterval(interval);
+                //clearInterval(interval);
                 $('#fb-login').click();
             }
         }, 500);

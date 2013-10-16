@@ -6,10 +6,17 @@
 			$("#labUser").text('Nick or Mail');
 			$("#signupLabel").text('Nick');
 			$("#confirmPass").text('Repeat Password');
-			document.getElementById("buttonReg").value ='   Sign up';
+
+			document.getElementById("buttonSubmitReg").value ='Sign up';
+			$("#mensReg").text('Sign up');
+			$("#logBot").text('Return to login');
+			$("#buttonReg").text('Sign up');
 			$("#lostPwd").text('forgot the password?');
 			$("#fb-button span").text('Log in with Facebook');
-			//$('#mensLogin').html(getMessage("confSincro3"));
+			$('#mens1').text("This extension allows you to capture and save web content such as notes on a virtual board. Sign up for FREE in ");
+			$('#mens2').text(" so you can access your notes from any browser (including mobile) and also from the android application in ");
+			$('#mens3').text("If you want to test the application before registering click ");
+
 		}
 		document.getElementById("nick").value = "";
 		document.getElementById("pwd").value = "";
@@ -31,10 +38,10 @@
 		});
 		$('#lostPwd').on('click',enviaPassword);
 
-	    $('#fb-login').on("click",function(){
-	        $('#black_overlay').show();
-	        loginFacebook();
-	    });
+	    // $('#fb-login').on("click",function(){
+	    //     $('#black_overlay').show();
+	    //     //loginFacebook();
+	    // });
 	});
 
 

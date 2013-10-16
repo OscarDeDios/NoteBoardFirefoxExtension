@@ -84,10 +84,6 @@ var literalesEsp = {
 		"message": "Nota vacia",
 		"description": "Nota vacia"
 	},
-	"avisoReg" : {
-		"message": "No puedes sincronizar más de 25 notas con un usuario de prueba. Esta nota no se recuperará en futuras sesiones.<br> Hazte usuario premium para poder tener las notas que quieras.",
-		"description": "Aviso Registro"
-	},
 	"demo" : {
 		"message": "Estas usando la demo, los cambios no se guardaran.",
 		"description": "Aviso Registro"
@@ -219,14 +215,8 @@ var literalesEsp = {
 },
 "ayudaEditarNota" : {
 	"message": "También puedes editar notas haciendo doble click en el contenido de la nota a editar.",
-},
-"confSincro3" : {
-	"message": "Para usar esta extensión necesitas registrate <b>GRATIS</b> en <a href='http://www.noteboardapp.com' target='_blank'>www.noteboardapp.com</a> así podrás acceder a tus notas desde cualquier navegador (incluido móviles) y también desde la aplicación android de <a href='https://play.google.com/store/apps/details?id=com.oscardr.tablonnotas' target='_blank'>Google Play</a>.<br>Si quieres probar la aplicación antes de registrarte haz click en <img id='demoImg' src='imagenes/demo.gif' width='35px'/><br><br>",
-	"description": "Mensaje confirmacion para sincronizar"
 }
 }
-
-
 
 
 
@@ -314,10 +304,6 @@ var literalesIng = {
 "vacio" : {
 	"message": "Empty Note",
 	"description": "Nota vacia"
-},
-"avisoReg" : {
-	"message": "You can not synchronize more than 25 notes with a demo user.<br>This note will not be recovered in future sessions. Join premium to have any notes you want.",
-	"description": "Aviso Registro"
 },
 "demo" : {
 	"message": "You are using the demo, changes won't be saved.",
@@ -450,10 +436,6 @@ var literalesIng = {
 },
 "ayudaEditarNota" : {
 	"message": "You can also edit notes by double clicking on the contents of the note to edit.",
-},
-"confSincro3" : {
-	"message": "To use this extension you need to register for <b>FREE</b> in <a href='http://www.noteboardapp.com' target='_blank'>www.noteboardapp.com</a> so you can access your notes from any browser (including mobile) and also from the android application to <a href='https://play.google.com/store/apps/details?id=com.oscardr.tablonnotas' target='_blank'>Google Play</a>.<br>If you want to test the application before registering click <img id='demoImg' src='imagenes/demo.gif' width='35px'/><br><br>",
-	"description": "Mensaje confirmacion para sincronizar"
 }
 }
 
