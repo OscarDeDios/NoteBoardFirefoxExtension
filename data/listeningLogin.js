@@ -1,5 +1,5 @@
 self.port.on('datosLogin', function(message) {
-   if (document.URL.indexOf('loginPageFire.php') > -1)
+   if (document.URL.indexOf('loginPageFire') > -1)
    {
         var param = 'nick=' + encodeURIComponent(message.nick);
         param += '&password=' + md5(message.password);
@@ -13,7 +13,7 @@ self.port.on('datosLogin', function(message) {
             cache: false,
             success: function(answer){
                     if ($.trim(answer) != 'OK') $('#capaContenedora').text('ERROR! ' + answer);
-                    else document.location.href="board.php";
+                    else document.location.href="firefoxBoard";
                 },
             error: function(objeto, quepaso, otroobj){
                 console.log(quepaso);
@@ -23,7 +23,7 @@ self.port.on('datosLogin', function(message) {
 });
 
 self.port.on('loginFb', function(message) {
-   if (document.URL.indexOf('loginPageFire.php') > -1)
+   if (document.URL.indexOf('loginPageFire') > -1)
    {
         var interval = setInterval (function(){
             if (document.getElementById('fb-login'))

@@ -1,5 +1,5 @@
 self.port.on('datosLogin', function(message) {
-   if (document.URL.indexOf('loginPageFireReg.php') > -1)
+   if (document.URL.indexOf('loginPageFireReg') > -1)
    {
         var param = 'nick=' + encodeURIComponent(message.nick);
         param += '&password=' + md5(message.password);
@@ -13,7 +13,7 @@ self.port.on('datosLogin', function(message) {
             cache: false,
             success: function(answer){
                     if ($.trim(answer) != 'OK')  $('#capaContenedora').text('ERROR! ' + answer);
-                    else document.location.href="paypalPage3.php";
+                    else document.location.href="paypalPage3";
                 },
             error: function(objeto, quepaso, otroobj){
                 console.log(quepaso);
@@ -23,7 +23,7 @@ self.port.on('datosLogin', function(message) {
 });
 
 self.port.on('loginFb', function(message) {
-   if (document.URL.indexOf('loginPageFireReg.php') > -1)
+   if (document.URL.indexOf('loginPageFireReg') > -1)
    {
         var interval = setInterval (function(){
             if (document.getElementById('fb-login'))
@@ -31,7 +31,7 @@ self.port.on('loginFb', function(message) {
                 clearInterval(interval);
                 $('#fb-login').click();
             }
-        }, 500);
+        }, 700);
     }
 });
 

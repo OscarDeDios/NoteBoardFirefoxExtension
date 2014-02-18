@@ -133,7 +133,7 @@ function logoutUsuario()
               // si estamos en registro nos vamos a la web
               if (numPost == 1000 && document.URL.indexOf('options3') > 0)
               {
-                  chrome.tabs.create({url:'http://www.noteboardapp.com/paypalPage2.php'});
+                  chrome.tabs.create({url:'http://www.noteboardapp.com/paypalPage2'});
                   window.close();
               }
             }
