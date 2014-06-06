@@ -31,7 +31,7 @@ self.port.on('loginFb', function(message) {
                 clearInterval(interval);
                 $('#fb-login').click();
             }
-        }, 700);
+        }, 1000);
     }
 });
 

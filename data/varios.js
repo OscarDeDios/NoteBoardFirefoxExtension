@@ -98,7 +98,7 @@ function registraUsuario(){
 
               $.ajax({
                   type: "POST",
-                  url: 'http://www.noteboardapp.com/api/registraUsuarioApi2.php',
+                  url: 'https://www.noteboardapp.com/api/registraUsuarioApi2.php',
                   data: param,
                   timeout: 20000,
                   cache: false,
@@ -122,7 +122,7 @@ function registraUsuario(){
                     }
                      },
                       //     if ($.trim(answer) != 'OK')  $('#capaContenedora').text( = 'ERROR! ' + answer;
-                      //     else document.location.href="http://www.noteboardapp.com/api/paypalPage.php";
+                      //     else document.location.href="https://www.noteboardapp.com/api/paypalPage.php";
 
                   error: function(objeto, quepaso, otroobj){
                       console.log(quepaso);

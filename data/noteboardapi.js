@@ -23,7 +23,7 @@
 
 function login(callback)
 {
-  //var url = 'http://www.noteboardapp.com/api/login.php';
+  //var url = 'https://www.noteboardapp.com/api/login.php';
   var param = 'nick=' + encodeURIComponent(document.getElementById('nick').value);
   param += '&pass=' + md5(document.getElementById('pwd').value);
   param += '&sid=' + localStorage["sid"];
@@ -31,7 +31,7 @@ function login(callback)
 
   $.ajax({
     type: "POST",
-    url: 'http://www.noteboardapp.com/api/login2.php',
+    url: 'https://www.noteboardapp.com/api/login2.php',
     data: param,
     cache: false,
     success: function(answer){
@@ -120,7 +120,7 @@ function logoutUsuario()
 
     $.ajax({
       type: "POST",
-      url: 'http://www.noteboardapp.com/api/createNote.php',
+      url: 'https://www.noteboardapp.com/api/createNote.php',
       data: param,
       cache: false,
       success: function(answer){
@@ -194,7 +194,7 @@ function logoutUsuario()
 
     $.ajax({
       type: "POST",
-      url: 'http://www.noteboardapp.com/api/updateNote.php',
+      url: 'https://www.noteboardapp.com/api/updateNote.php',
       data: param,
       cache: false,
       success: function(answer){
@@ -221,7 +221,7 @@ function deleteNoteLogin(numPost)
 
     $.ajax({
       type: "POST",
-      url: 'http://www.noteboardapp.com/api/deleteNote.php',
+      url: 'https://www.noteboardapp.com/api/deleteNote.php',
       data: param,
       cache: false,
       success: function(answer){
@@ -247,7 +247,7 @@ function deleteNoteLogin(numPost)
 
   function sincronizaLogin(addNotes,showNotes,compartir)
   {
-    var url = 'http://www.noteboardapp.com/api/getNotes.php';
+    var url = 'https://www.noteboardapp.com/api/getNotes.php';
     url += '?id_usuario=' + localStorage["id_usuario"];
     url += '&token=' + localStorage["token"];
 
@@ -482,7 +482,7 @@ function llamadaUpdate(param)
 {
     $.ajax({
       type: "POST",
-      url: 'http://www.noteboardapp.com/api/updateListNotes4.php',
+      url: 'https://www.noteboardapp.com/api/updateListNotes4.php',
       data: param,
       cache: false,
       async: false,
